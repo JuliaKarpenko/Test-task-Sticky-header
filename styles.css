@@ -1,0 +1,50 @@
+*{
+margin: 0px;
+padding:0px;
+}
+
+
+body {
+	background:  rgb(18,18,17);
+}
+
+.headerClass {		
+	margin-top: 10px;
+	font-size: 35px;
+	position: -webkit-sticky;
+	top: 0px;
+	text-align: center;
+	padding: 10px;
+	font-weight: bold;
+	color: white;
+}
+
+.textBoxClass {
+	padding:10px;
+	color: white;
+	font-size: 20px;
+}
+
+.buttonContainer {
+	position: sticky;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(18,18,17);
+	padding: 10px;
+	text-align: center;
+}
+
+#btnInit, #btnDisable {
+	border: 1px solid #0a3c59;
+	background: #3e779d;
+	padding: 7px 12px;
+	border-radius: 6px;
+	-moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+	box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+	color: #eff1f2;
+	font-size: 17px;
+	font-family: helvetica, serif;
+	text-decoration: none;
+	vertical-align: middle;
+}
