@@ -7,7 +7,7 @@ body {
 	background:  rgb(18,18,17);
 }
 
-.headerClass {		
+.header {		
 	margin-top: 10px;
 	font-size: 35px;
 	position: -webkit-sticky;
@@ -18,7 +18,7 @@ body {
 	color: white;
 }
 
-.textBoxClass {
+.textBox {
 	padding:10px;
 	color: white;
 	font-size: 20px;

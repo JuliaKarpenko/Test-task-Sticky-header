@@ -1,6 +1,6 @@
 addContent(document.getElementsByClassName('container'));
 
-var stickyHolder = initStickyHolder(document.querySelectorAll(".headerClass"));
+var stickyHolder = initStickyHolder(document.querySelectorAll(".header"));
 
 var btnInit = document.getElementById("btnInit");
 btnInit.onclick = stickyHolder.initialize;
@@ -8,7 +8,8 @@ btnInit.onclick = stickyHolder.initialize;
 var btnDisable = document.getElementById("btnDisable");
 btnDisable.onclick = stickyHolder.disable;
 
-function initStickyHolder(elements) {
+// init object that is able to tuer on/off sticky of headers
+function initStickyHolder(elements) { 			
 	return {
 		initialize : function() {
 			console.log(elements.length);
@@ -29,17 +30,18 @@ function initStickyHolder(elements) {
 
 }
 
-function addContent(container) {
+//add content to container that would be scrolled
+function addContent(container) {				
 	for ( i = 0; i <= 99; i++) {
 		var itemBox = document.createElement('div');
 
 		var header = document.createElement("div");
-		header.className = "headerClass";
+		header.className = "header";
 		header.innerHTML = "<div>Headline " + +(i + 1)  + "</div>";
 		setRandomBackground(header);
 
 		var textBox = document.createElement("div");
-		textBox.className = "textBoxClass";
+		textBox.className = "textBox";
 		textBox.innerHTML = "<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\
 		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n\
 		Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,\n\
@@ -59,8 +61,9 @@ function addContent(container) {
 		container[0].appendChild(itemBox);
 	}
 }
-	
-function setRandomBackground(element) {
+
+// set random color to background
+function setRandomBackground(element) {			
 	var randomRed = getRandomInt(0, 255);
 	var randomGreen = getRandomInt(0, 255);
 	var randomBlue = getRandomInt(0, 255);
