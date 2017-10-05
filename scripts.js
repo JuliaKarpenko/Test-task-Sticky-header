@@ -29,7 +29,6 @@ function initStickyHolder(elements) {
 
 }
 
-
 function addContent(container) {
 	for ( i = 0; i <= 99; i++) {
 		var itemBox = document.createElement('div');
